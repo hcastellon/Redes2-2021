@@ -1,0 +1,18 @@
+$TTL    604800          ; 1 week
+@       IN      SOA     ns1.redes2.local. root.redes2.local. (                
+                3       ; config edit                
+                604800  ; refresh  - 1 week                
+                86400   ; retry – 24 hours                
+                2419200 ; expiration – 4 weeks                
+                604800  ; minimum – 1 week                
+)
+
+; NS Records        
+        IN      NS      ns1.redes2.local.        
+        
+        
+        
+; A Records
+ns1.redes2.local.         IN      A       192.168.20.1
+host1.redes2.local.       IN      A       192.168.20.10
+host2.redes2.local.       IN      A       192.168.20.11
